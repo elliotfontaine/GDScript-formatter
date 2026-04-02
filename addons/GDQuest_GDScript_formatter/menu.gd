@@ -31,6 +31,7 @@ func _ready() -> void:
 	menu_button = MenuButton.new()
 	menu_button.text = MENU_TEXT
 	menu_button.flat = true
+	menu_button.theme_type_variation = &"FlatMenuButton"
 
 	popup_menu = menu_button.get_popup()
 	_populate_menu()
